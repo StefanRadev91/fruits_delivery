@@ -9,6 +9,7 @@ import { originLabel, stockLabel, unitLabel } from "@/i18n/labels";
 import { getPriceContext, getProductBySlug, type ProductView } from "@/lib/catalog";
 
 const t = bg.shop;
+const qty = (n: number) => n.toLocaleString("bg-BG", { maximumFractionDigits: 3 });
 
 export async function generateMetadata({ params }: PageProps<"/catalog/[slug]">): Promise<Metadata> {
   const { slug } = await params;
@@ -27,8 +28,20 @@ export async function generateMetadata({ params }: PageProps<"/catalog/[slug]">)
 
 /** schema.org Product. Public structured data uses the public price (gross for households, net for businesses). */
 function productJsonLd(product: ProductView) {
-  const audience = appConfig.b2cEnabled ? "B2C" : "B2B";
-  const price = displayUnitPrice(product, audience);
+  const availability =
+    product.stockStatus === "OUT_OF_STOCK" ? "https://schema.org/OutOfStock" : "https://schema.org/InStock";
+  // Prices are private unless households can buy (B2C): then the public gross price is published.
+  if (!appConfig.b2cEnabled) {
+    return {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: product.name,
+      description: product.description ?? undefined,
+      category: product.category.name,
+      image: product.photos.map((p) => new URL(p.url, siteUrl).toString()),
+    };
+  }
+  const price = displayUnitPrice(product, "B2C");
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -47,8 +60,7 @@ function productJsonLd(product: ProductView) {
         priceCurrency: "EUR",
         valueAddedTaxIncluded: price.includesVat,
       },
-      availability:
-        product.stockStatus === "OUT_OF_STOCK" ? "https://schema.org/OutOfStock" : "https://schema.org/InStock",
+      availability,
     },
   };
 }
@@ -69,15 +81,18 @@ export default async function ProductPage({ params }: PageProps<"/catalog/[slug]
     <main className="mx-auto w-full max-w-4xl flex-1 space-y-6 px-4 py-10" data-testid="product-page">
       <Link href="/catalog" className="text-sm underline">{t.back}</Link>
       <div className="grid gap-8 sm:grid-cols-2">
-        <ProductImage product={product} />
+        <ProductImage product={product} priority />
         <div className="space-y-4">
           <h1 className="text-3xl font-bold" data-testid="product-name">{product.name}</h1>
           <ProductBadges product={product} />
           <ProductPrice product={product} {...ctx} />
-          {!ctx.isClient && (
+          {!ctx.showPrices && (
             <p className="text-sm text-muted-foreground" data-testid="product-client-hint">
               {t.clientPriceHint}{" "}
               <Link href="/login" className="font-medium text-forest underline underline-offset-2">{t.loginForPrices}</Link>
+              <br />
+              {t.askForAccess}{" "}
+              <Link href="/contact" className="font-medium text-forest underline underline-offset-2">{t.contactUs}</Link>
             </p>
           )}
           {product.description && <p>{product.description}</p>}
@@ -90,8 +105,8 @@ export default async function ProductPage({ params }: PageProps<"/catalog/[slug]
             )}
             <dt className="text-muted-foreground">{t.availability}</dt><dd>{stockLabel[product.stockStatus]}</dd>
             <dt className="text-muted-foreground">{t.season}</dt><dd>{season}</dd>
-            <dt className="text-muted-foreground">{t.minOrder}</dt><dd>{product.minQuantity} {unit}</dd>
-            <dt className="text-muted-foreground">{t.step}</dt><dd>{product.stepQuantity} {unit}</dd>
+            <dt className="text-muted-foreground">{t.minOrder}</dt><dd>{qty(product.minQuantity)} {unit}</dd>
+            <dt className="text-muted-foreground">{t.step}</dt><dd>{qty(product.stepQuantity)} {unit}</dd>
           </dl>
         </div>
       </div>

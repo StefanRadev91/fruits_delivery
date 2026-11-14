@@ -1,4 +1,5 @@
 import { Apple } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { displayUnitPrice } from "@/domain/pricing";
 import { formatMoney } from "@/domain/money";
@@ -9,8 +10,9 @@ import type { PriceContext, ProductView } from "@/lib/catalog";
 const t = bg.shop;
 
 export function ProductPrice({
-  product, audience, priceList,
+  product, audience, priceList, showPrices,
 }: { product: ProductView } & PriceContext) {
+  if (!showPrices) return null;
   const price = displayUnitPrice(product, audience, priceList);
   return (
     <p data-testid="product-price">
@@ -22,15 +24,25 @@ export function ProductPrice({
   );
 }
 
-/** Placeholder until product photos are uploaded. */
-export function ProductImage({ product }: { product: ProductView }) {
+/** Product photo (optimized, lazy by default); a placeholder icon when there is none. */
+export function ProductImage({ product, priority = false }: { product: ProductView; priority?: boolean }) {
   const photo = product.photos[0];
-  return photo ? (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img src={photo.url} alt={product.name} className="aspect-square w-full rounded-md object-cover" />
-  ) : (
-    <div className="flex aspect-square w-full items-center justify-center rounded-md bg-muted text-muted-foreground">
-      <Apple className="size-12" aria-hidden />
+  return (
+    <div className="relative aspect-square w-full overflow-hidden rounded-md bg-muted">
+      {photo ? (
+        <Image
+          src={photo.url}
+          alt={product.name}
+          fill
+          sizes="(min-width: 1024px) 280px, (min-width: 768px) 30vw, (min-width: 640px) 45vw, 50vw"
+          priority={priority}
+          className="object-cover"
+        />
+      ) : (
+        <div className="flex size-full items-center justify-center text-muted-foreground">
+          <Apple className="size-12" aria-hidden />
+        </div>
+      )}
     </div>
   );
 }

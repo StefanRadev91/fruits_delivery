@@ -29,7 +29,7 @@ export function LoginForm({ callbackUrl }: { callbackUrl?: string }) {
   return (
     <form action={action} className="space-y-4" data-testid="login-form">
       <input type="hidden" name="callbackUrl" value={callbackUrl ?? ""} />
-      <Field name="email" label={t.email} type="email" testId="login-email" autoComplete="email" />
+      <Field name="email" label={t.identifier} testId="login-email" autoComplete="username" />
       <Field name="password" label={t.password} type="password" testId="login-password" autoComplete="current-password" />
       {state.error && <p className="text-sm text-destructive" data-testid="login-error">{state.error}</p>}
       <Button type="submit" disabled={pending} data-testid="login-submit">{t.submitLogin}</Button>

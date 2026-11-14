@@ -5,6 +5,14 @@ import { isValidEik } from "./eik";
 const v = bg.validation;
 
 export const emailSchema = z.string().trim().toLowerCase().pipe(z.email(v.email));
+/** Staff can sign in with a plain username (e.g. "admin"); it is stored as username@USERNAME_DOMAIN. */
+export const USERNAME_DOMAIN = "lsfreshfruits.local";
+export const loginIdentifierSchema = z
+  .string()
+  .trim()
+  .toLowerCase()
+  .transform((s) => (s.includes("@") ? s : `${s}@${USERNAME_DOMAIN}`))
+  .pipe(z.email(v.email));
 export const passwordSchema = z.string().min(8, v.password);
 export const eikSchema = z.string().trim().refine(isValidEik, v.eik);
 export const postcodeSchema = z.string().trim().regex(/^\d{4}$/, v.postcode);

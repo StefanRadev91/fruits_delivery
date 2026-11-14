@@ -1,4 +1,5 @@
 import { getCurrentUser } from "@/auth/guards";
+import { canAccessBackoffice } from "@/auth/policy";
 import { appConfig } from "@/config/app";
 import type { PriceList } from "@/domain/pricing";
 import { sofiaNow } from "@/domain/delivery";
@@ -50,15 +51,18 @@ export async function getProductBySlug(slug: string) {
 }
 
 /**
- * Who is looking at prices: an approved company member sees net B2B prices
- * (with the company price list). Everyone else sees the public price: gross
- * for households when B2C is on, otherwise the same net list price businesses start from.
+ * Who is looking at prices. Prices are private: only an approved company member
+ * (with their company price list) and back-office staff (base price) see them.
+ * Everyone else sees the catalog without any prices. Households (B2C, when enabled)
+ * see the public gross price.
  */
 export type PriceContext = {
   audience: Audience;
   priceList: PriceList | null;
   /** Approved company member (sees their own prices). */
   isClient: boolean;
+  /** Whether prices are shown at all. */
+  showPrices: boolean;
 };
 
 export async function getPriceContext(): Promise<PriceContext> {
@@ -73,6 +77,7 @@ export async function getPriceContext(): Promise<PriceContext> {
       return {
         audience: "B2B",
         isClient: true,
+        showPrices: true,
         priceList: list && {
           discountPercent: Number(list.discountPercent),
           overrides: Object.fromEntries(list.items.map((i) => [i.productId, i.priceCents])),
@@ -80,5 +85,11 @@ export async function getPriceContext(): Promise<PriceContext> {
       };
     }
   }
-  return { audience: appConfig.b2cEnabled ? "B2C" : "B2B", priceList: null, isClient: false };
+  const staff = !!user && canAccessBackoffice(user.role);
+  return {
+    audience: appConfig.b2cEnabled ? "B2C" : "B2B",
+    priceList: null,
+    isClient: false,
+    showPrices: staff || appConfig.b2cEnabled,
+  };
 }
