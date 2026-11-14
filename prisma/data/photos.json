@@ -1,0 +1,686 @@
+{
+  "avokado-trops": {
+    "file": "/products/avokado-trops.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Avocado_Hass_-_single_and_halved.jpg"
+  },
+  "avokado-zeleno": {
+    "file": "/products/avokado-zeleno.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "B.navez",
+    "source": "https://commons.wikimedia.org/wiki/File:Persea_americana_fruit_2.JPG"
+  },
+  "banani": {
+    "file": "/products/banani.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "TimothyPilgrim",
+    "source": "https://commons.wikimedia.org/wiki/File:Bananavarieties.jpg"
+  },
+  "ananas": {
+    "file": "/products/ananas.jpg",
+    "license": "CC BY 3.0",
+    "author": "Suniltg at Malayalam Wikipedia",
+    "source": "https://commons.wikimedia.org/wiki/File:%E0%B4%95%E0%B5%88%E0%B4%A4%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%95%E0%B5%8D%E0%B4%95.jpg"
+  },
+  "borovinka": {
+    "file": "/products/borovinka.jpg",
+    "license": "Public domain",
+    "author": "The original Uploader was Oven Fresh at English Wikipedia",
+    "source": "https://commons.wikimedia.org/wiki/File:Blueberries.jpg"
+  },
+  "greypfrut-fresh": {
+    "file": "/products/greypfrut-fresh.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Grapefruits_-_whole-halved-segments.jpg"
+  },
+  "grozde-bez-semki": {
+    "file": "/products/grozde-bez-semki.jpg",
+    "license": "CC BY 4.0",
+    "author": "Vyacheslav Argenberg",
+    "source": "https://commons.wikimedia.org/wiki/File:Grapes,_Rostov-on-Don,_Russia.jpg"
+  },
+  "krusha": {
+    "file": "/products/krusha.jpg",
+    "license": "Public domain",
+    "author": "Keith Weller",
+    "source": "https://commons.wikimedia.org/wiki/File:Pears.jpg"
+  },
+  "kivi": {
+    "file": "/products/kivi.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Crowhurst  et al.",
+    "source": "https://commons.wikimedia.org/wiki/File:Actinidia_fruits.jpg"
+  },
+  "laym": {
+    "file": "/products/laym.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Prosthetic Head",
+    "source": "https://commons.wikimedia.org/wiki/File:Lime_Blossom.jpg"
+  },
+  "limoni": {
+    "file": "/products/limoni.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Elena Chochkova",
+    "source": "https://commons.wikimedia.org/wiki/File:P1030323.JPG"
+  },
+  "malina-125-g": {
+    "file": "/products/malina-125-g.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Raspberries_(Rubus_idaeus).jpg"
+  },
+  "nar": {
+    "file": "/products/nar.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Augustus Binu : flickr",
+    "source": "https://commons.wikimedia.org/wiki/File:Pomegranate_Juice_(2019).jpg"
+  },
+  "portokal-deserten": {
+    "file": "/products/portokal-deserten.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Oranges_-_whole-halved-segment.jpg"
+  },
+  "portokal-fresh": {
+    "file": "/products/portokal-deserten.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Oranges_-_whole-halved-segment.jpg"
+  },
+  "yabalka-zelena": {
+    "file": "/products/yabalka-zelena.jpg",
+    "license": "GFDL 1.2",
+    "author": "fir0002  flagstaffotos [at] gmail.com\n\t\tCanon 20D + Sigma 150mm f/2.8",
+    "source": "https://commons.wikimedia.org/wiki/File:Granny_smith_and_cross_section.jpg"
+  },
+  "yabalka-zlatna": {
+    "file": "/products/yabalka-zlatna.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Golden_Delicious_apples.jpg"
+  },
+  "yabalka-chervena": {
+    "file": "/products/yabalka-chervena.jpg",
+    "license": "GFDL 1.2",
+    "author": "fir0002  flagstaffotos [at] gmail.com\n\t\tCanon 20D + Sigma 150mm f/2.8",
+    "source": "https://commons.wikimedia.org/wiki/File:Red_delicious_and_cross_section.jpg"
+  },
+  "yagodi": {
+    "file": "/products/yagodi.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Garden_strawberry_(Fragaria_%C3%97_ananassa)_single2.jpg"
+  },
+  "batat": {
+    "file": "/products/batat.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Llez",
+    "source": "https://commons.wikimedia.org/wiki/File:Ipomoea_batatas_006.JPG"
+  },
+  "lital-dzhem": {
+    "file": "/products/lital-dzhem.jpg",
+    "license": "CC BY 1.0",
+    "author": "en:User:Geographer",
+    "source": "https://commons.wikimedia.org/wiki/File:Iceberg_lettuce_in_SB.jpg"
+  },
+  "brokoli": {
+    "file": "/products/brokoli.jpg",
+    "license": "GFDL 1.2",
+    "author": "Fir0002",
+    "source": "https://commons.wikimedia.org/wiki/File:Broccoli_and_cross_section_edit.jpg"
+  },
+  "brokolini-200-g": {
+    "file": "/products/brokolini-200-g.jpg",
+    "license": "CC BY 1.0",
+    "author": "User Agriffin on en.wikipedia",
+    "source": "https://commons.wikimedia.org/wiki/File:Broccolini.jpg"
+  },
+  "belen-chesan": {
+    "file": "/products/belen-chesan.jpg",
+    "license": "Public domain",
+    "author": "unknown",
+    "source": "https://commons.wikimedia.org/wiki/File:Allium_sativum_Woodwill_1793.jpg"
+  },
+  "gaba-pechurka": {
+    "file": "/products/gaba-pechurka.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "chris_73",
+    "source": "https://commons.wikimedia.org/wiki/File:ChampignonMushroom.jpg"
+  },
+  "gaba-kladnitsa": {
+    "file": "/products/gaba-kladnitsa.jpg",
+    "license": "CC BY 2.5",
+    "author": "Photograph by Aaron Sherman",
+    "source": "https://commons.wikimedia.org/wiki/File:Oyster_mushoom_fells.jpg"
+  },
+  "gaba-kralska-pechurka": {
+    "file": "/products/gaba-pechurka.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "chris_73",
+    "source": "https://commons.wikimedia.org/wiki/File:ChampignonMushroom.jpg"
+  },
+  "gaba-vetrogon-400-g": {
+    "file": "/products/gaba-vetrogon-400-g.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Diego Delso",
+    "source": "https://commons.wikimedia.org/wiki/File:Seta_de_cardo_(Pleurotus_eryngii),_2012-10-03,_DD_01.JPG"
+  },
+  "gaba-shimedzhi": {
+    "file": "/products/gaba-shimedzhi.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "FotoosVanRobin from Netherlands",
+    "source": "https://commons.wikimedia.org/wiki/File:Asian_mushrooms.jpg"
+  },
+  "beybi-spanak-100-g": {
+    "file": "/products/beybi-spanak-100-g.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Rasbak",
+    "source": "https://commons.wikimedia.org/wiki/File:Spinacia_oleracea_Spinazie_bloeiend.jpg"
+  },
+  "beybi-rukola-100-g": {
+    "file": "/products/beybi-rukola-100-g.jpg",
+    "license": "CC0",
+    "author": "Unknown authorUnknown author",
+    "source": "https://commons.wikimedia.org/wiki/File:Eruca_vesicaria_BM010755249.jpg"
+  },
+  "daykon": {
+    "file": "/products/daykon.png",
+    "license": "CC BY-SA 4.0",
+    "author": "KimYunmi",
+    "source": "https://commons.wikimedia.org/wiki/File:Different_kinds_of_White_Radish.png"
+  },
+  "domat-rozov": {
+    "file": "/products/domat-rozov.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Softeis",
+    "source": "https://commons.wikimedia.org/wiki/File:Tomato_je.jpg"
+  },
+  "domat-zhalt-oranzhev": {
+    "file": "/products/domat-rozov.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Softeis",
+    "source": "https://commons.wikimedia.org/wiki/File:Tomato_je.jpg"
+  },
+  "domati-kampari": {
+    "file": "/products/domati-kampari.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Luc Viatour",
+    "source": "https://commons.wikimedia.org/wiki/File:Tomates_cerises_Luc_Viatour.jpg"
+  },
+  "kopriva-100-g": {
+    "file": "/products/kopriva-100-g.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "Evelyn Simak",
+    "source": "https://commons.wikimedia.org/wiki/File:Fen_nettle_(Urtica_dioica_ssp._galeopsifolia)_-_geograph.org.uk_-_5423125.jpg"
+  },
+  "egipetski-grah": {
+    "file": "/products/egipetski-grah.jpg",
+    "license": "GFDL 1.2",
+    "author": "Prathyush Thomas",
+    "source": "https://commons.wikimedia.org/wiki/File:Chickpea_BNC.jpg"
+  },
+  "egipetski-bob": {
+    "file": "/products/egipetski-bob.jpg",
+    "license": "Public domain",
+    "author": "unknown",
+    "source": "https://commons.wikimedia.org/wiki/File:Illustration_Vicia_faba1.jpg"
+  },
+  "zele": {
+    "file": "/products/zele.jpg",
+    "license": "GFDL 1.2",
+    "author": "fir0002  flagstaffotos [at] gmail.com\n\t\tCanon 20D + Sigma 150mm f/2.8",
+    "source": "https://commons.wikimedia.org/wiki/File:Cabbage_and_cross_section_on_white.jpg"
+  },
+  "zele-cherveno": {
+    "file": "/products/zele-cherveno.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "KENPEI",
+    "source": "https://commons.wikimedia.org/wiki/File:Brassica_oleracea_var_capitata_Rubyball.jpg"
+  },
+  "kartof-star": {
+    "file": "/products/kartof-star.jpg",
+    "license": "Public domain",
+    "author": "Scott Bauer, USDA ARS",
+    "source": "https://commons.wikimedia.org/wiki/File:Patates.jpg"
+  },
+  "kartof-frenski": {
+    "file": "/products/kartof-star.jpg",
+    "license": "Public domain",
+    "author": "Scott Bauer, USDA ARS",
+    "source": "https://commons.wikimedia.org/wiki/File:Patates.jpg"
+  },
+  "holandski-kartof-za-parzhene": {
+    "file": "/products/kartof-star.jpg",
+    "license": "Public domain",
+    "author": "Scott Bauer, USDA ARS",
+    "source": "https://commons.wikimedia.org/wiki/File:Patates.jpg"
+  },
+  "kartof-lilav-sharen": {
+    "file": "/products/kartof-star.jpg",
+    "license": "Public domain",
+    "author": "Scott Bauer, USDA ARS",
+    "source": "https://commons.wikimedia.org/wiki/File:Patates.jpg"
+  },
+  "kaliforniya-zhalta": {
+    "file": "/products/kaliforniya-zhalta.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Kham Tran - www.khamtran.com",
+    "source": "https://commons.wikimedia.org/wiki/File:Green-Yellow-Red-Pepper-2009.jpg"
+  },
+  "krastavitsa": {
+    "file": "/products/krastavitsa.jpg",
+    "license": "Public domain",
+    "author": "Stephen Ausmus, USDA ARS",
+    "source": "https://commons.wikimedia.org/wiki/File:ARS_cucumber.jpg"
+  },
+  "karfiol": {
+    "file": "/products/karfiol.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Coyau",
+    "source": "https://commons.wikimedia.org/wiki/File:Chou-fleur_02.jpg"
+  },
+  "karfiol-tsveten-zhalt-lilav-zelen": {
+    "file": "/products/karfiol.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Coyau",
+    "source": "https://commons.wikimedia.org/wiki/File:Chou-fleur_02.jpg"
+  },
+  "kartof-beybi": {
+    "file": "/products/kartof-star.jpg",
+    "license": "Public domain",
+    "author": "Scott Bauer, USDA ARS",
+    "source": "https://commons.wikimedia.org/wiki/File:Patates.jpg"
+  },
+  "keyl": {
+    "file": "/products/keyl.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Rasbak",
+    "source": "https://commons.wikimedia.org/wiki/File:Boerenkool.jpg"
+  },
+  "luk-kromid": {
+    "file": "/products/luk-kromid.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Colin",
+    "source": "https://commons.wikimedia.org/wiki/File:Mixed_onions.jpg"
+  },
+  "luk-cherven": {
+    "file": "/products/luk-cherven.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Svklimkin",
+    "source": "https://commons.wikimedia.org/wiki/File:Red_onions_11.jpg"
+  },
+  "luk-presen": {
+    "file": "/products/luk-presen.jpg",
+    "license": "Public domain",
+    "author": "Evan-Amos",
+    "source": "https://commons.wikimedia.org/wiki/File:CSA-Red-Spring-Onions.jpg"
+  },
+  "lyuta-chushka": {
+    "file": "/products/lyuta-chushka.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Takeaway",
+    "source": "https://commons.wikimedia.org/wiki/File:Madame_Jeanette_and_other_chillies.jpg"
+  },
+  "halapenyo": {
+    "file": "/products/halapenyo.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "unknown",
+    "source": "https://commons.wikimedia.org/wiki/File:Immature_jalapeno_capsicum_annuum_var_annuum.jpeg"
+  },
+  "morkov": {
+    "file": "/products/morkov.jpg",
+    "license": "Public domain",
+    "author": "Evan-Amos",
+    "source": "https://commons.wikimedia.org/wiki/File:Vegetable-Carrot-Bundle-wStalks.jpg"
+  },
+  "patladzhan": {
+    "file": "/products/patladzhan.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Joydeep",
+    "source": "https://commons.wikimedia.org/wiki/File:Solanum_melongena_24_08_2012_(1).JPG"
+  },
+  "padroni": {
+    "file": "/products/padroni.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Luis Miguel Bugallo Sánchez (http://commons.wikimedia.org/wiki/User:Lmbuga)",
+    "source": "https://commons.wikimedia.org/wiki/File:Pementos_de_Padron.jpg"
+  },
+  "pashtarnak": {
+    "file": "/products/pashtarnak.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Didier Descouens",
+    "source": "https://commons.wikimedia.org/wiki/File:Pastinaca_sativa_MHNT.BOT.2004.0.jpg"
+  },
+  "pak-choy": {
+    "file": "/products/pak-choy.jpg",
+    "license": "CC BY 2.0",
+    "author": "spurekar",
+    "source": "https://commons.wikimedia.org/wiki/File:Bok_Choy_(49553125456).jpg"
+  },
+  "radicho": {
+    "file": "/products/radicho.jpg",
+    "license": "Public domain",
+    "author": "The original uploader was Kasteelhoeve Puth at English Wikipedia.",
+    "source": "https://commons.wikimedia.org/wiki/File:RadicchioNL.jpg"
+  },
+  "romanesko": {
+    "file": "/products/romanesko.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Romanesco_broccoli_(Brassica_oleracea).jpg"
+  },
+  "aysberg": {
+    "file": "/products/aysberg.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Rasbak 13:13, 20 May 2007 (UTC)",
+    "source": "https://commons.wikimedia.org/wiki/File:Iceberg_lettuce_(IJssla_krop).jpg"
+  },
+  "salata-zelena": {
+    "file": "/products/lital-dzhem.jpg",
+    "license": "CC BY 1.0",
+    "author": "en:User:Geographer",
+    "source": "https://commons.wikimedia.org/wiki/File:Iceberg_lettuce_in_SB.jpg"
+  },
+  "salata-chervena": {
+    "file": "/products/lital-dzhem.jpg",
+    "license": "CC BY 1.0",
+    "author": "en:User:Geographer",
+    "source": "https://commons.wikimedia.org/wiki/File:Iceberg_lettuce_in_SB.jpg"
+  },
+  "salata-romana-paket-2-br": {
+    "file": "/products/salata-romana-paket-2-br.jpg",
+    "license": "CC BY 3.0",
+    "author": "Forest & Kim Starr",
+    "source": "https://commons.wikimedia.org/wiki/File:Starr_070730-7911_Lactuca_sativa.jpg"
+  },
+  "selari": {
+    "file": "/products/selari.jpg",
+    "license": "Public domain",
+    "author": "Lombroso",
+    "source": "https://commons.wikimedia.org/wiki/File:Celery_1.jpg"
+  },
+  "spanak-500-g": {
+    "file": "/products/beybi-spanak-100-g.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Rasbak",
+    "source": "https://commons.wikimedia.org/wiki/File:Spinacia_oleracea_Spinazie_bloeiend.jpg"
+  },
+  "tikvichki": {
+    "file": "/products/tikvichki.jpg",
+    "license": "Public domain",
+    "author": "Evan-Amos",
+    "source": "https://commons.wikimedia.org/wiki/File:CSA-Striped-Zucchini.jpg"
+  },
+  "tikvichki-shareni": {
+    "file": "/products/tikvichki.jpg",
+    "license": "Public domain",
+    "author": "Evan-Amos",
+    "source": "https://commons.wikimedia.org/wiki/File:CSA-Striped-Zucchini.jpg"
+  },
+  "tselina": {
+    "file": "/products/tselina.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "DocteurCosmos",
+    "source": "https://commons.wikimedia.org/wiki/File:C%C3%A9leri-rave-fendu.jpg"
+  },
+  "cheri-domati": {
+    "file": "/products/domati-kampari.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Luc Viatour",
+    "source": "https://commons.wikimedia.org/wiki/File:Tomates_cerises_Luc_Viatour.jpg"
+  },
+  "tsveklo-vareno-plik-500-g": {
+    "file": "/products/tsveklo-vareno-plik-500-g.png",
+    "license": "CC BY-SA 3.0",
+    "author": "BriannaWalther",
+    "source": "https://commons.wikimedia.org/wiki/File:Detroitdarkredbeets.png"
+  },
+  "tsveklo-cherveno": {
+    "file": "/products/tsveklo-vareno-plik-500-g.png",
+    "license": "CC BY-SA 3.0",
+    "author": "BriannaWalther",
+    "source": "https://commons.wikimedia.org/wiki/File:Detroitdarkredbeets.png"
+  },
+  "chesan-star": {
+    "file": "/products/belen-chesan.jpg",
+    "license": "Public domain",
+    "author": "unknown",
+    "source": "https://commons.wikimedia.org/wiki/File:Allium_sativum_Woodwill_1793.jpg"
+  },
+  "chushka-zelena": {
+    "file": "/products/kaliforniya-zhalta.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Kham Tran - www.khamtran.com",
+    "source": "https://commons.wikimedia.org/wiki/File:Green-Yellow-Red-Pepper-2009.jpg"
+  },
+  "chushka-kokteylna": {
+    "file": "/products/kaliforniya-zhalta.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Kham Tran - www.khamtran.com",
+    "source": "https://commons.wikimedia.org/wiki/File:Green-Yellow-Red-Pepper-2009.jpg"
+  },
+  "chushka-kaliforniya": {
+    "file": "/products/kaliforniya-zhalta.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Kham Tran - www.khamtran.com",
+    "source": "https://commons.wikimedia.org/wiki/File:Green-Yellow-Red-Pepper-2009.jpg"
+  },
+  "chushka-chervena": {
+    "file": "/products/kaliforniya-zhalta.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Kham Tran - www.khamtran.com",
+    "source": "https://commons.wikimedia.org/wiki/File:Green-Yellow-Red-Pepper-2009.jpg"
+  },
+  "tsveten-morkov-cheren": {
+    "file": "/products/morkov.jpg",
+    "license": "Public domain",
+    "author": "Evan-Amos",
+    "source": "https://commons.wikimedia.org/wiki/File:Vegetable-Carrot-Bundle-wStalks.jpg"
+  },
+  "beybi-morkov": {
+    "file": "/products/morkov.jpg",
+    "license": "Public domain",
+    "author": "Evan-Amos",
+    "source": "https://commons.wikimedia.org/wiki/File:Vegetable-Carrot-Bundle-wStalks.jpg"
+  },
+  "tsarska-turshiya": {
+    "file": "/products/tsarska-turshiya.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Liz Sullivan",
+    "source": "https://commons.wikimedia.org/wiki/File:Gherkins_and_Onions.JPG"
+  },
+  "meshana-turshiya": {
+    "file": "/products/meshana-turshiya.jpg",
+    "license": "Public domain",
+    "author": "Antonio Cavallo",
+    "source": "https://commons.wikimedia.org/wiki/File:GiardinieraSpicy.JPG"
+  },
+  "kiselo-zele": {
+    "file": "/products/tsarska-turshiya.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Liz Sullivan",
+    "source": "https://commons.wikimedia.org/wiki/File:Gherkins_and_Onions.JPG"
+  },
+  "leshnik-byal-surov": {
+    "file": "/products/leshnik-byal-surov.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Hazelnuts_(Corylus_avellana)_-_whole_with_kernels_(cropped2).jpg"
+  },
+  "leshnik-pechen": {
+    "file": "/products/leshnik-byal-surov.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Hazelnuts_(Corylus_avellana)_-_whole_with_kernels_(cropped2).jpg"
+  },
+  "oreh-ekstra": {
+    "file": "/products/oreh-ekstra.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Walnuts_-_whole_and_open_with_halved_kernel.jpg"
+  },
+  "badem-pechen": {
+    "file": "/products/badem-pechen.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Almonds_-_in_shell,_shell_cracked_open,_shelled,_blanched.jpg"
+  },
+  "badem-surov": {
+    "file": "/products/badem-pechen.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ivar Leidus",
+    "source": "https://commons.wikimedia.org/wiki/File:Almonds_-_in_shell,_shell_cracked_open,_shelled,_blanched.jpg"
+  },
+  "biren-fastak": {
+    "file": "/products/biren-fastak.jpg",
+    "license": "Public domain",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "source": "https://commons.wikimedia.org/wiki/File:Arachis_hypogaea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-163.jpg"
+  },
+  "brazilski-oreh": {
+    "file": "/products/brazilski-oreh.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Lior Golgher (upper left photo and upper middle photo), U.S. Department of Agriculture (upper right photo), mauroguanandi (bottom left photo), USDA Forest Service Alaska Region from Juneau, Alaska, USA (bottom right photo), montage by User:RoRo",
+    "source": "https://commons.wikimedia.org/wiki/File:Bertholletia_excelsa_compose.jpg"
+  },
+  "kashu-pecheno": {
+    "file": "/products/kashu-pecheno.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Abhishek Jacob",
+    "source": "https://commons.wikimedia.org/wiki/File:Cashew_apples.jpg"
+  },
+  "kashu-surovo": {
+    "file": "/products/kashu-pecheno.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Abhishek Jacob",
+    "source": "https://commons.wikimedia.org/wiki/File:Cashew_apples.jpg"
+  },
+  "kedrovi-yadki-500-g": {
+    "file": "/products/kedrovi-yadki-500-g.jpg",
+    "license": "CC BY-SA 2.0 de",
+    "author": "Quellenangabe und Beleg an burgkirsch(at)web.de erbeten.",
+    "source": "https://commons.wikimedia.org/wiki/File:Pinoli.jpg"
+  },
+  "kaysiya-sushena": {
+    "file": "/products/kaysiya-sushena.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Andrey Butko",
+    "source": "https://commons.wikimedia.org/wiki/File:Ab_food_04.jpg"
+  },
+  "susam-byal-500-g": {
+    "file": "/products/susam-byal-500-g.jpg",
+    "license": "Public domain",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "source": "https://commons.wikimedia.org/wiki/File:Sesamum_indicum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-129.jpg"
+  },
+  "susam-cheren-500-g": {
+    "file": "/products/susam-byal-500-g.jpg",
+    "license": "Public domain",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "source": "https://commons.wikimedia.org/wiki/File:Sesamum_indicum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-129.jpg"
+  },
+  "sham-fastak-byal-surov": {
+    "file": "/products/sham-fastak-byal-surov.jpg",
+    "license": "CC BY 2.0",
+    "author": "THOR",
+    "source": "https://commons.wikimedia.org/wiki/File:Pistachio_vera.jpg"
+  },
+  "magdanoz": {
+    "file": "/products/magdanoz.jpg",
+    "license": "GFDL 1.2",
+    "author": "Jonathunder",
+    "source": "https://commons.wikimedia.org/wiki/File:Petroselinum.jpg"
+  },
+  "bosilek": {
+    "file": "/products/bosilek.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Photo by David J. Stang",
+    "source": "https://commons.wikimedia.org/wiki/File:Ocimum_basilicum_8zz.jpg"
+  },
+  "valeriana-100-g": {
+    "file": "/products/valeriana-100-g.jpg",
+    "license": "CC BY-SA 3.0 de",
+    "author": "Schwäbin",
+    "source": "https://commons.wikimedia.org/wiki/File:Ackersalat02.jpg"
+  },
+  "dzhindzhifil": {
+    "file": "/products/dzhindzhifil.jpg",
+    "license": "Public domain",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "source": "https://commons.wikimedia.org/wiki/File:Koeh-146-no_text.jpg"
+  },
+  "div-luk": {
+    "file": "/products/div-luk.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Rodolph",
+    "source": "https://commons.wikimedia.org/wiki/File:Photo_of_Allium_Ursinum,_wild_garlic,_north-west_Hampshire,_UK,_May_2014.jpg"
+  },
+  "estragon": {
+    "file": "/products/estragon.jpg",
+    "license": "Public domain",
+    "author": "No machine-readable author provided. Ies assumed (based on copyright claims).",
+    "source": "https://commons.wikimedia.org/wiki/File:Estragon_1511.jpg"
+  },
+  "kopar": {
+    "file": "/products/kopar.jpg",
+    "license": "Public domain",
+    "author": "Illustration_Anethum_graveolens0.jpg: Prof. Dr. Otto Wilhelm Thomé\nderivative work: Aroche (talk)",
+    "source": "https://commons.wikimedia.org/wiki/File:Illustration_Anethum_graveolens_clean.jpg"
+  },
+  "spanak-paket": {
+    "file": "/products/beybi-spanak-100-g.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Rasbak",
+    "source": "https://commons.wikimedia.org/wiki/File:Spinacia_oleracea_Spinazie_bloeiend.jpg"
+  },
+  "menta": {
+    "file": "/products/menta.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "C T Johansson",
+    "source": "https://commons.wikimedia.org/wiki/File:Mentha_spicata-IMG_6186.jpg"
+  },
+  "mikro-griyn-miks": {
+    "file": "/products/mikro-griyn-miks.jpg",
+    "license": "Public domain",
+    "author": "Peggy Greb",
+    "source": "https://commons.wikimedia.org/wiki/File:Liping_Kou_observes_microgreens.jpg"
+  },
+  "rozmarin": {
+    "file": "/products/rozmarin.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Margalob",
+    "source": "https://commons.wikimedia.org/wiki/File:Rosemary_in_bloom.JPG"
+  },
+  "cherven-piper": {
+    "file": "/products/cherven-piper.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Marcosgarrido88",
+    "source": "https://commons.wikimedia.org/wiki/File:Piment%C3%B3n_Tap_de_Cort%C3%AD_(cropped).jpg"
+  },
+  "cheren-piper-mlyani": {
+    "file": "/products/cheren-piper-mlyani.jpg",
+    "license": "Public domain",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "source": "https://commons.wikimedia.org/wiki/File:Piper_nigrum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-107.jpg"
+  },
+  "cheren-piper-na-zarna": {
+    "file": "/products/cheren-piper-mlyani.jpg",
+    "license": "Public domain",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "source": "https://commons.wikimedia.org/wiki/File:Piper_nigrum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-107.jpg"
+  },
+  "chubritsa-sitna": {
+    "file": "/products/chubritsa-sitna.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "No machine-readable author provided. Bogdan assumed (based on copyright claims).",
+    "source": "https://commons.wikimedia.org/wiki/File:Satureja_hortensis_bgiu.jpg"
+  },
+  "dzhodzhen-1-kg": {
+    "file": "/products/dzhodzhen-1-kg.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Simon Eugster --Simon 13:07, 2 July 2006 (UTC)",
+    "source": "https://commons.wikimedia.org/wiki/File:Minze.jpg"
+  }
+}
