@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 const t = bg.shop;
 export const metadata: Metadata = {
   title: t.title,
-  description: "Пресни плодове и зеленчуци с доставка до дома. Разгледайте асортимента ни.",
+  description: "Пресни плодове и зеленчуци с доставка за бизнеса. Разгледайте асортимента ни.",
   alternates: { canonical: "/catalog" },
 };
 
@@ -40,6 +40,15 @@ export default async function CatalogPage({ searchParams }: PageProps<"/catalog"
   return (
     <main className="mx-auto w-full max-w-6xl flex-1 space-y-6 px-4 py-10">
       <h1 className="text-3xl font-extrabold">{t.title}</h1>
+
+      {!ctx.showPrices && (
+        <p className="max-w-2xl rounded-lg bg-muted px-4 py-3 text-sm" data-testid="catalog-price-hint">
+          {t.clientPriceHint}{" "}
+          <Link href="/login" className="font-medium text-forest underline underline-offset-2">{t.loginForPrices}</Link>
+          {" · "}
+          <Link href="/contact" className="font-medium text-forest underline underline-offset-2">{t.contactUs}</Link>
+        </p>
+      )}
 
       <form action="/catalog" className="flex max-w-md gap-2" role="search">
         {categorySlug && <input type="hidden" name="category" value={categorySlug} />}

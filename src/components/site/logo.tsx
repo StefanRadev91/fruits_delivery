@@ -15,7 +15,7 @@ export function Logo({ onDark = false, className }: { onDark?: boolean; classNam
   return (
     <span className={cn("inline-flex items-center gap-2 font-heading text-lg font-extrabold tracking-tight", onDark ? "text-white" : "text-forest", className)}>
       <LogoMark onDark={onDark} />
-      Пресни плодове
+      L&S FRESH FRUITS
     </span>
   );
 }

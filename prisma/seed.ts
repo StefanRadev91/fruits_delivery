@@ -5,6 +5,7 @@ import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient, type Unit } from "../src/generated/prisma/client";
 import { addDays, sofiaNow } from "../src/domain/delivery";
 import { slugify } from "../src/lib/slug";
+import { IMPORTED, VARIABLE_WEIGHT, quantityRules } from "./data/catalog-rules";
 import { ourNetCents, priceList } from "./data/price-list";
 
 if (process.env.NODE_ENV === "production") {
@@ -22,27 +23,6 @@ const photos: Record<string, { file: string }> = existsSync("prisma/data/photos.
   : {};
 const date = (iso: string) => new Date(`${iso}T00:00:00Z`);
 const today = sofiaNow(new Date()).date;
-/** Products we know are imported (the supplier list does not say; everything else stays unknown). */
-const IMPORTED = new Set([
-  "Авокадо Тропс", "Авокадо зелено", "Банани", "Ананас", "Грейпфрут фреш", "Лайм", "Лимони",
-  "Портокал десертен", "Портокал фреш", "Бразилски орех",
-]);
-/** Whole items priced per kg: the real weight is entered at picking. */
-const VARIABLE_WEIGHT = new Set(["Зеле", "Зеле червено", "Карфиол", "Романеско", "Ананас", "Целина"]);
-/** Bulk staples are ordered in bigger quantities. */
-const BULK_MIN: Record<string, number> = {
-  "Картоф стар": 5, "Картоф френски": 5, "Холандски картоф за пържене": 5,
-  "Лук кромид": 2, "Лук червен": 2, "Морков": 2, "Зеле": 2, "Зеле червено": 2, "Цвекло червено": 2,
-};
-
-/** Order rules by product: staples bulk, pricey items by half kilo, others from 1 kg in half-kilo steps. */
-function quantityRules(name: string, unit: string, netCents: number) {
-  if (unit !== "KG") return { min: 1, step: 1 };
-  if (BULK_MIN[name]) return { min: BULK_MIN[name], step: 1 };
-  return netCents >= 800 ? { min: 0.5, step: 0.5 } : { min: 1, step: 0.5 };
-}
-
-
 async function main() {
   // Reset (children first)
   for (const m of [

@@ -1,6 +1,6 @@
 /** Company details shown on the site. Replace the placeholders with the real ones. */
 export const company = {
-  name: "Пресни плодове ЕООД",
+  name: "L&S FRESH FRUITS",
   eik: "000000000",
   address: "гр. София, ул. Примерна 1",
   phone: "+359 88 000 0000",

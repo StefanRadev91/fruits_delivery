@@ -30,7 +30,7 @@ export default function BrandPage() {
       <header className="space-y-2">
         <h1 className="text-4xl font-extrabold">Брандбук</h1>
         <p className="text-muted-foreground">
-          Работно име: „Пресни плодове“ (може да се смени). Тоновете, шрифтовете и компонентите по-долу са
+          Име: „L&S FRESH FRUITS“. Тоновете, шрифтовете и компонентите по-долу са
           същите, които ползва сайтът, така че тази страница е и преглед на дизайн системата.
         </p>
       </header>
@@ -81,7 +81,7 @@ export default function BrandPage() {
       <Section title="4. Шрифтове">
         <div className="space-y-4 rounded-xl border p-6">
           <p className="text-sm text-muted-foreground">Заглавия — Montserrat (600/700/800), кирилица</p>
-          <p className="font-heading text-4xl font-extrabold">Пресни плодове и зеленчуци</p>
+          <p className="font-heading text-4xl font-extrabold">L&S FRESH FRUITS</p>
           <p className="font-heading text-2xl font-bold">Доставка до вашия обект</p>
           <p className="pt-2 text-sm text-muted-foreground">Текст — Open Sans (400/600), кирилица</p>
           <p>

@@ -2,7 +2,7 @@ import { PrismaAdapter } from "@auth/prisma-adapter";
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import Nodemailer from "next-auth/providers/nodemailer";
-import { emailSchema } from "@/domain/schemas";
+import { loginIdentifierSchema } from "@/domain/schemas";
 import { db } from "@/lib/db";
 import { sendEmail } from "@/lib/email";
 import { verifyPassword } from "@/lib/password";
@@ -11,7 +11,7 @@ import { authConfig } from "./config";
 import { z } from "zod";
 
 const t = getMessages().auth;
-const credentialsSchema = z.object({ email: emailSchema, password: z.string().min(1) });
+const credentialsSchema = z.object({ email: loginIdentifierSchema, password: z.string().min(1) });
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   ...authConfig,

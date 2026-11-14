@@ -66,29 +66,28 @@ test("catalog search and category filter", async ({ page }) => {
   await expect(page.getByTestId("product-card")).toHaveCount(3);
 });
 
-test("anonymous visitors see list prices without VAT and a photo", async ({ page }) => {
-  test.skip(b2cEnabled, "household prices are gross when B2C is on");
+test("anonymous visitors see products and photos but no prices", async ({ page }) => {
+  test.skip(b2cEnabled, "household prices are public when B2C is on");
   await page.goto("/catalog/yabalka-zelena");
   await expect(page.getByTestId("product-name")).toHaveText("Ябълка зелена");
-  // supplier 1.66 net, minus our reduction = 1.49, shown without VAT
-  await expect(page.getByTestId("product-price")).toContainText("1,49 €");
-  await expect(page.getByTestId("product-price")).toContainText("без ДДС");
+  await expect(page.getByTestId("product-price")).toHaveCount(0);
   await expect(page.getByTestId("product-client-hint")).toBeVisible();
   const img = page.locator('main img[alt="Ябълка зелена"]');
   await expect(img).toBeVisible();
   expect(await img.evaluate((el: HTMLImageElement) => el.complete && el.naturalWidth > 0)).toBe(true);
   const ld = JSON.parse((await page.getByTestId("product-jsonld").textContent())!);
   expect(ld["@type"]).toBe("Product");
-  expect(ld.offers.price).toBe("1.49");
-  expect(ld.offers.priceSpecification.valueAddedTaxIncluded).toBe(false);
+  expect(ld.offers).toBeUndefined();
   expect(ld.image[0]).toContain("/products/");
 });
 
-test("catalog cards show a price and a photo for each product", async ({ page }) => {
+test("catalog cards show a photo for each product and no prices", async ({ page }) => {
+  test.skip(b2cEnabled, "household prices are public when B2C is on");
   await page.goto("/catalog");
   const cards = page.getByTestId("product-card");
   expect(await cards.count()).toBeGreaterThan(100);
-  await expect(page.getByTestId("product-price")).toHaveCount(await cards.count());
+  await expect(page.getByTestId("product-price")).toHaveCount(0);
+  await expect(page.getByTestId("catalog-price-hint")).toBeVisible();
   expect(await page.locator('[data-testid="product-card"] img').count()).toBeGreaterThan(100);
 });
 
